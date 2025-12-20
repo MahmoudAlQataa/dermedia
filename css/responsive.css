@@ -1,0 +1,238 @@
+/* to be resbonsive */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    * {
+        flex-wrap: wrap;
+    }
+
+    header {
+        padding: 0.5em 3em;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 1.8em;
+    }
+
+    .contact-us .text , .why-choose-us .ttext  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-us .text p {
+        text-align: center;
+    }
+
+    .contact-us .text h1, .why-choose-us .ttext h1{
+       flex-wrap: wrap;
+        font-size: 4em;
+        text-align: center;
+    }
+
+
+    .offered-service, .catagorys, .card {
+        flex-direction: column;
+        padding: 1em 2em;
+    }
+
+    .services .we-offer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        text-align: start;
+        justify-content: center;
+    }
+
+    .we-offer .text h1 {
+        display: flex;
+    }
+
+    .we-offer h1 {
+        font-size: 4em;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .contact-us form {
+        max-width: 100%;
+    }
+
+    .products .project {
+        max-width: 100%;
+    }
+
+    .why-choose-us .catagorys .card {
+        min-width: 100%;
+    }
+
+    .about-us, .contact-us{
+        flex-wrap: wrap;
+    }
+
+    .icons {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: row;
+        gap: 10px;
+        
+    }
+    
+    .card {
+        flex-direction: row;
+    }
+
+
+    .card .text p {
+        text-wrap: wrap;
+        flex-wrap: wrap;
+        max-width: 80%;
+        height: auto;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    * {
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 100%;       
+        height: auto;      
+        object-fit: cover; 
+    }
+
+    header {
+        padding: 0.5em 1.5em;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.5em;
+    }
+
+    .hero a {
+        padding: 0.5em 1.5em;
+        font-size: 0.9em;
+    }
+    
+    .part-title {
+        font-size: 1em;
+        padding: 0 1em;
+    }
+    
+    .services, .contact-us, .products, .why-choose-us {
+        padding: 0 1em;
+    }
+    
+    .why-choose-us .ttext {
+        padding: 0 2em;
+    }
+
+    .contact-us .text , .why-choose-us .ttext {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-us .text h1, .why-choose-us .ttext h1 {
+        flex-wrap: wrap;
+        font-size: 4em;
+        text-align: center;
+    }
+
+    .offered-service, .catagorys, .card {
+        flex-direction: column;
+        padding: 1em 1em;
+    }
+    
+    .services {
+        display: flex;
+    }
+
+    .services .we-offer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .we-offer h1 {
+        font-size: 3.5em;
+        flex-wrap: wrap;
+        text-align: center;
+        text-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .contact-us form {
+        max-width: 100%;
+    }
+    
+    .products .project {
+        max-width: 100%;
+    }
+    
+    .why-choose-us .catagorys .card {
+        min-width: 100%;
+    }
+    
+    .about-us, .contact-us{
+        flex-wrap: wrap;
+    }
+
+    footer {
+        padding: 3em 1em 5em 1em;
+    }
+    
+    footer .foot-links, footer .bar, footer .bar .icons, footer .bar .office, footer .crypo {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        text-align: center;
+    }
+
+    .icons {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .card {
+        flex-direction: row;
+    }
+
+    .card .text p {
+        text-wrap: wrap;
+        flex-wrap: wrap;
+        max-width: 80%;
+        height: auto;
+    }
+
+}

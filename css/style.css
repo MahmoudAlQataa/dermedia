@@ -1,0 +1,660 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Trirong", serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #2e2e2e;
+    /* padding: 0 3em; */
+}
+
+body.dark, i.dark {
+    background-color: #2e2e2e;
+    color: #f2f2f2;
+}
+
+body.dark i {
+    color: #fff;
+}
+body.dark a {
+    color: #fff;
+}
+
+/* Header Section*/
+
+header{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;   
+    background-color: #000;    
+    color: #f4f4f4;
+    padding: 0.5em 7em;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #f4f4f4;
+    margin: 0 1.5em;
+}
+
+.nav-links {
+    display: flex;    
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 10px 0;
+}
+
+#drop-menu{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+} 
+
+#drop-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #2e2e2e;
+    max-width: fit-content;
+    height: auto;
+    padding: 2em;
+    cursor: pointer;
+}
+
+#contact-btn {
+    font-size: 0.9em;
+    padding: 0.7em 2.4em;
+    border: #f4f4f4 1px solid;
+    color: #f4f4f4;
+    background-color: transparent;
+    margin: 1em;
+}
+
+#theam {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+}
+
+#theam-btn {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+}
+
+
+
+/* Hero Section*/
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 0em !important;
+}
+
+.hero h1 {
+    font-size: 4em;
+}
+
+
+.hero p {
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+.hero a {
+    background-color: #f4f4f4 !important;
+    color: #2e2e2e !important;
+    margin-top: 2em;
+    padding: 0.7em 2.2em;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;    
+}
+
+.hero a:hover {
+    cursor: pointer;
+}
+
+.part-title {
+    font-size: 1.2em;
+    padding: 0 3em;
+    margin: 1em 0;
+}
+
+/* Services */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 0 5em;
+    margin-bottom: 4em;
+}
+
+.offered-service {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+    padding: 1em 5em;
+}
+
+.catagorys {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    border-bottom: #2e2e2e 1px solid;
+    padding: 1em;
+    width: 100vh;
+    max-width: 100%;
+}
+
+.card .star-icon {
+    padding: 1em;
+    margin: auto 0;
+}
+.card .star-icon i {
+    font-size: 2.5em;
+}
+
+.card .text:hover {
+    cursor: pointer;
+}
+
+/* to not get effected by the animation */
+.offered-service {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.sercise-img{
+    position: sticky;
+}
+
+/* ANIMATION FOR CARDS */
+#card1 p, #card2 p, #card3 p {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(-5px);
+}
+
+#card1 p.show, #card2 p.show, #card3 p.show {
+    height: 70px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .text p {
+    max-width: 300px;
+}
+
+.offered-service button {
+    padding: 0.9em 6em;
+    max-width: fit-content;
+    background-color: #000;
+    color: #f2f2f2;
+}
+
+button:hover {
+    cursor: pointer;
+}
+    
+.we-offer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;    
+    justify-content: end;
+    align-items: center;
+}
+
+.we-offer h1 {
+    flex-wrap: wrap;
+    font-size: 5.5em;
+    text-align: end;
+    text-wrap: wrap;
+    max-width: 500px;
+    width: 100%;
+}
+
+.we-offer p {
+    max-width: 400px;
+    margin-top: 1em;
+}
+
+/* PRODUCTS */
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    padding: 0em 5em 4em 3em;
+}
+
+.products .project {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 55%;
+    border-bottom: #8a8989 1px solid;
+    padding-bottom: 1.5em;
+}
+
+/* .products .project .title h2 {
+    
+} */
+
+.products .project .title h2 span {
+    color: #8a8989;
+}
+
+/* .products .project .discreption {}
+
+.products .project .discreption h3 {}
+
+.products .project .discreption p {} */
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide.active {
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f4f4f4;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+
+/* WHY CHOOSE US */
+
+.why-choose-us {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 5em;
+}
+
+.why-choose-us .ttext {
+    display: flex;
+    gap: 2em;
+}
+
+.why-choose-us .ttext h1 {
+    font-size: 6em;
+    font-weight: 400;
+    text-align: end;
+    line-height: 1;
+    margin-bottom: 15px;
+    /* position: relative;
+    top: -20px; */
+}
+
+.why-choose-us .catagorys {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    flex-direction: column;
+    margin: 2em 0 4em 0;
+    align-items: end;
+}
+
+.why-choose-us .catagorys .card {
+    min-width: 700px;
+    padding-bottom: 2em;
+}
+
+.why-choose-us .catagorys .card .text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.why-choose-us .catagorys .card .text p {
+    min-width: 400px;
+}
+
+/* CONTACT US */
+
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0em 5em 1em 5em;
+}
+
+.contact-us .text {
+    display: flex;
+    gap: 2em;
+}
+
+.contact-us .text p {
+    max-width: 300px;
+    align-self: flex-end;
+}
+
+.contact-us .text h1 {
+    font-size: 5.5em;
+    font-weight: 400;
+    text-align: end;
+    line-height: 1;
+    margin-bottom: 15px;
+    position: relative;
+    top: 20px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    flex-direction: column;    
+    max-width: 50%;
+}
+
+.contact-us form div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.contact-us form .two-input {
+    flex-direction: row;
+}
+
+.contact-us form .one {
+    flex: 1 1 auto;
+}
+
+input {
+    padding: 0.7em;
+    border: none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.contact-us form button {
+    padding: 0.9em 2.2em;
+    margin-top: 2em;
+    max-width: 50%;
+    border: none;
+    font-size: 0.8em;
+    font-weight: 600;  
+    background-color: #000;
+    color: #f4f4f4;
+}
+
+/* popup */
+
+.popup {
+    display: none;
+    flex-direction: column;
+    max-width: fit-content;
+    padding: 0.5em 2em;
+    border: 1px solid #2a518b;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    color: #2e2e2e;
+    background-color: #f4f4f4;
+    z-index: 1000;
+}
+
+.popup p {
+    margin: 1em 0;
+}
+
+.popfooter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#close {
+    padding: 0.5em 2em;
+    background-color: #2e2e2e;
+    color: #f2f2f2;
+    border: none;
+}
+
+/* ABOUT US */
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    padding: 1em 5em 5em 5em;
+    gap: 1.5em;
+}
+
+.about-us h1 {
+    font-size: 7em;
+    font-weight: 400;
+    text-align: end;
+    line-height: 1;
+    margin-bottom: 15px;
+    position: relative;
+    top: -20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+    padding: 5em 5em 10em 5em;
+}
+
+footer .foot-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: end;
+}
+
+footer .foot-links a {
+    margin: 0 1em;
+    font-size: 1em;
+    font-weight: 400;
+
+}
+
+
+footer .bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 4em 0 3em 0;
+    font-weight: 100;
+}
+
+footer .bar .icons a {
+    padding: 0;
+    margin: 1.2em;
+}
+
+footer .bar .sotial-media {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .bar .sotial-media .icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: end;
+}
+
+footer .bar .office {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: column;
+}
+footer .bar .office a {
+    margin: 0;
+}
+
+footer .crypo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+footer hr {
+    margin-bottom: 2em;
+}
+
+footer a {
+    color: #2e2e2e;
+}
+
+i {
+    color: #2e2e2e;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+
+
+/* أيقونة الخطوط */
+.lines {
+    display: none;         /* مخفية على اللابتوب */
+    font-size: 2em;        /* حجم الأيقونة */
+    cursor: pointer;       /* شكل اليد عند المرور */
+    
+}
+
+/* Mobile menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;          /* مخفية خارج الشاشة */
+    width: 250px;
+    height: 100%;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1em;
+    transition: 0.3s ease; /* حركة سلسة */
+    z-index: 10000;
+}
+
+/* عند ظهور القائمة */
+.mobile-menu.show {
+    right: 0;              /* تتحرك للداخل */
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .lines {
+        display: block;    /* تظهر على الشاشات الصغيرة */
+        margin-left: auto; /* تظهر على اليمين */
+    }
+
+    .nav-links, .extra {
+        display: none;     /* تخفي الروابط العادية والأزرار */
+    }
+}
+
+@media (max-width: 768px) {
+    .lines {
+        display: block;    /* تظهر على الشاشات الصغيرة */
+        margin-left: auto; /* تظهر على اليمين */
+    }
+
+    .nav-links, .extra {
+        display: none;     /* تخفي الروابط العادية والأزرار */
+    }
+}
