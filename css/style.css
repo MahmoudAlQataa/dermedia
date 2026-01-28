@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +12,8 @@ body {
     /* padding: 0 3em; */
 }
 
-body.dark, i.dark {
+body.dark,
+i.dark {
     background-color: #2e2e2e;
     color: #f2f2f2;
 }
@@ -20,20 +21,21 @@ body.dark, i.dark {
 body.dark i {
     color: #fff;
 }
+
 body.dark a {
     color: #fff;
 }
 
 /* Header Section*/
 
-header{
+header {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-between;
-    align-items: center;   
-    background-color: #000;    
+    align-items: center;
+    background-color: #000;
     color: #f4f4f4;
     padding: 0.5em 7em;
     width: 100%;
@@ -46,13 +48,13 @@ a {
 }
 
 .nav-links {
-    display: flex;    
+    display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     padding: 10px 0;
 }
 
-#drop-menu{
+#drop-menu {
     position: absolute;
     top: 75%;
     left: 50%;
@@ -60,7 +62,7 @@ a {
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease;
-} 
+}
 
 #drop-menu.show {
     opacity: 1;
@@ -134,7 +136,7 @@ a {
     padding: 0.7em 2.2em;
     border: none;
     font-size: 1em;
-    font-weight: 600;    
+    font-weight: 600;
 }
 
 .hero a:hover {
@@ -178,13 +180,14 @@ a {
     border-bottom: #2e2e2e 1px solid;
     padding: 1em;
     width: 100vh;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .card .star-icon {
     padding: 1em;
     margin: auto 0;
 }
+
 .card .star-icon i {
     font-size: 2.5em;
 }
@@ -196,17 +199,19 @@ a {
 /* to not get effected by the animation */
 .offered-service {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 1rem;
     align-items: flex-start;
 }
 
-.sercise-img{
+.sercise-img {
     position: sticky;
 }
 
 /* ANIMATION FOR CARDS */
-#card1 p, #card2 p, #card3 p {
+#card1 p,
+#card2 p,
+#card3 p {
     height: 0;
     opacity: 0;
     overflow: hidden;
@@ -214,7 +219,9 @@ a {
     transform: translateY(-5px);
 }
 
-#card1 p.show, #card2 p.show, #card3 p.show {
+#card1 p.show,
+#card2 p.show,
+#card3 p.show {
     height: 70px;
     opacity: 1;
     transform: translateY(0);
@@ -234,11 +241,11 @@ a {
 button:hover {
     cursor: pointer;
 }
-    
+
 .we-offer {
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;    
+    gap: 2em;
     justify-content: end;
     align-items: center;
 }
@@ -425,7 +432,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    flex-direction: column;    
+    flex-direction: column;
     max-width: 50%;
 }
 
@@ -451,8 +458,8 @@ input {
 
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+    appearance: none;
+    margin: 0;
 }
 
 .contact-us form button {
@@ -461,7 +468,7 @@ input[type=number]::-webkit-inner-spin-button {
     max-width: 50%;
     border: none;
     font-size: 0.8em;
-    font-weight: 600;  
+    font-weight: 600;
     background-color: #000;
     color: #f4f4f4;
 }
@@ -578,6 +585,7 @@ footer .bar .office {
     gap: 1rem;
     flex-direction: column;
 }
+
 footer .bar .office a {
     margin: 0;
 }
@@ -609,17 +617,21 @@ i {
 
 /* أيقونة الخطوط */
 .lines {
-    display: none;         /* مخفية على اللابتوب */
-    font-size: 2em;        /* حجم الأيقونة */
-    cursor: pointer;       /* شكل اليد عند المرور */
-    
+    display: none;
+    /* مخفية على اللابتوب */
+    font-size: 2em;
+    /* حجم الأيقونة */
+    cursor: pointer;
+    /* شكل اليد عند المرور */
+
 }
 
 /* Mobile menu */
 .mobile-menu {
     position: fixed;
     top: 0;
-    right: -100%;          /* مخفية خارج الشاشة */
+    right: -100%;
+    /* مخفية خارج الشاشة */
     width: 250px;
     height: 100%;
     background-color: #2e2e2e;
@@ -627,34 +639,44 @@ i {
     flex-direction: column;
     padding: 2em;
     gap: 1em;
-    transition: 0.3s ease; /* حركة سلسة */
+    transition: 0.3s ease;
+    /* حركة سلسة */
     z-index: 10000;
 }
 
 /* عند ظهور القائمة */
 .mobile-menu.show {
-    right: 0;              /* تتحرك للداخل */
+    right: 0;
+    /* تتحرك للداخل */
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
     .lines {
-        display: block;    /* تظهر على الشاشات الصغيرة */
-        margin-left: auto; /* تظهر على اليمين */
+        display: block;
+        /* تظهر على الشاشات الصغيرة */
+        margin-left: auto;
+        /* تظهر على اليمين */
     }
 
-    .nav-links, .extra {
-        display: none;     /* تخفي الروابط العادية والأزرار */
+    .nav-links,
+    .extra {
+        display: none;
+        /* تخفي الروابط العادية والأزرار */
     }
 }
 
 @media (max-width: 768px) {
     .lines {
-        display: block;    /* تظهر على الشاشات الصغيرة */
-        margin-left: auto; /* تظهر على اليمين */
+        display: block;
+        /* تظهر على الشاشات الصغيرة */
+        margin-left: auto;
+        /* تظهر على اليمين */
     }
 
-    .nav-links, .extra {
-        display: none;     /* تخفي الروابط العادية والأزرار */
+    .nav-links,
+    .extra {
+        display: none;
+        /* تخفي الروابط العادية والأزرار */
     }
 }

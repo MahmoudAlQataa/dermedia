@@ -25,28 +25,32 @@
         font-size: 1.8em;
     }
 
-    .contact-us .text , .why-choose-us .ttext  {
+    .contact-us .text,
+    .why-choose-us .ttext {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .contact-us .text p {
         text-align: center;
     }
 
-    .contact-us .text h1, .why-choose-us .ttext h1{
-       flex-wrap: wrap;
+    .contact-us .text h1,
+    .why-choose-us .ttext h1 {
+        flex-wrap: wrap;
         font-size: 4em;
         text-align: center;
     }
 
-
-    .offered-service, .catagorys, .card {
+    .offered-service,
+    .catagorys,
+    .card {
         flex-direction: column;
         padding: 1em 2em;
     }
 
-    .services .we-offer{
+    .services .we-offer {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -76,7 +80,8 @@
         min-width: 100%;
     }
 
-    .about-us, .contact-us{
+    .about-us,
+    .contact-us {
         flex-wrap: wrap;
     }
 
@@ -85,9 +90,9 @@
         flex: 1 1 auto;
         flex-direction: row;
         gap: 10px;
-        
+
     }
-    
+
     .card {
         flex-direction: row;
     }
@@ -110,9 +115,9 @@
     }
 
     img {
-        width: 100%;       
-        height: auto;      
-        object-fit: cover; 
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     header {
@@ -120,7 +125,7 @@
         flex-direction: row;
         align-items: flex-start;
     }
-    
+
     .nav-links {
         flex-direction: column;
         gap: 0.5em;
@@ -138,42 +143,49 @@
         padding: 0.5em 1.5em;
         font-size: 0.9em;
     }
-    
+
     .part-title {
         font-size: 1em;
         padding: 0 1em;
     }
-    
-    .services, .contact-us, .products, .why-choose-us {
+
+    .services,
+    .contact-us,
+    .products,
+    .why-choose-us {
         padding: 0 1em;
     }
-    
+
     .why-choose-us .ttext {
         padding: 0 2em;
     }
 
-    .contact-us .text , .why-choose-us .ttext {
+    .contact-us .text,
+    .why-choose-us .ttext {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .contact-us .text h1, .why-choose-us .ttext h1 {
+    .contact-us .text h1,
+    .why-choose-us .ttext h1 {
         flex-wrap: wrap;
         font-size: 4em;
         text-align: center;
     }
 
-    .offered-service, .catagorys, .card {
+    .offered-service,
+    .catagorys,
+    .card {
         flex-direction: column;
         padding: 1em 1em;
     }
-    
+
     .services {
         display: flex;
     }
 
-    .services .we-offer{
+    .services .we-offer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -189,28 +201,33 @@
         width: 100%;
         height: fit-content;
     }
-    
+
     .contact-us form {
         max-width: 100%;
     }
-    
+
     .products .project {
         max-width: 100%;
     }
-    
+
     .why-choose-us .catagorys .card {
         min-width: 100%;
     }
-    
-    .about-us, .contact-us{
+
+    .about-us,
+    .contact-us {
         flex-wrap: wrap;
     }
 
     footer {
         padding: 3em 1em 5em 1em;
     }
-    
-    footer .foot-links, footer .bar, footer .bar .icons, footer .bar .office, footer .crypo {
+
+    footer .foot-links,
+    footer .bar,
+    footer .bar .icons,
+    footer .bar .office,
+    footer .crypo {
         flex-direction: column;
         align-items: center;
         gap: 1em;
